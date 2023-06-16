@@ -1,0 +1,558 @@
+*{
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+}
+
+                                                    /* Tous le contenu */
+
+
+header{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background: black/* transparent */;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    z-index: 9;
+    top: -5px;
+    left: 0px;
+}
+                                                    /* LOGO */
+.logo{
+    position: absolute;
+    display: flex;
+    padding: 10px 30px;
+    font-weight: 600;
+}
+.logo .orange{
+    color: orangered;
+}
+.logo .blanc{
+    color: white;
+}
+
+                                                    /* MENU */
+                                                    /* MENU Onglets accueil et autres */
+.menu{
+    position: relative;
+    display: flex;
+    padding: 20px 0px 80px 55%;
+    word-spacing: 30px;
+    font-size: 16px;
+    font-weight: 600;
+}
+                                                    /* Boutton du menu et son hover plus le ion-icon */
+.menu .btn-menu{
+    position: relative;
+    display: flex;
+    left: 10px;
+    color: orangered;
+    word-spacing: normal;
+    width: 155px;
+    height: 40px;
+    background: transparent;
+    align-items: center;
+    top: 0px;
+    border: 1px solid orangered;
+    border-radius: 4px;
+    justify-content: center;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+                                                    /* button hover */
+.menu .btn-menu:hover{
+    background-color: orangered;
+    color: white;
+}
+                                                    /* Alignement du menu */
+.menu ul li{
+    position: relative;
+    display: inline-block;
+    top: 12px;
+}
+                                                    /* modification du contenue Menu; hover */
+.menu ul li a{
+    text-decoration: none;
+    position: relative;
+    color: white;
+    transition: .5s ease-in-out;
+}
+.menu .contact{
+    color: orangered;
+}
+.menu ul li a:hover{
+    color: orangered;
+}
+
+
+
+.contenu{
+    display: flex;
+    position: relative;
+    background: rgb(19, 19, 19);
+    width: auto;
+    height: 100vh;
+    /* z-index: -10; */
+}
+.contenu .ctn-genral{
+    position: relative;
+    display: flex;
+    color: #fff;
+}
+
+.contenu .ctn-genral .btn{
+    position: absolute;
+    display: flex;
+    color: orangered;
+    width: 120px;
+    height: 27px;
+    font-weight: 500;
+    border-radius: 20px;
+    background-color: rgb(250, 199, 181);
+    justify-content: center;
+    align-items: center;
+    margin: 120px 70px;
+}
+.contenu .ctn-genral h1{
+    display: flex;
+    position: absolute;
+    margin: 160px 70px;
+    width: 500px;
+    text-transform: capitalize;
+}
+.contenu .ctn-genral .texte{
+    position: absolute;
+    display: flex;
+    /* top:250px;
+    left: 90px; */
+    margin: 280px 70px;
+    width: 570px;
+    line-height: 2;
+}
+.contenu .ctn-genral .droit-elm{
+    display: flex;
+    position: absolute;
+    width: 630px;
+    height: 440px;
+    background-color: #f8f8f8;
+    margin: 80px 640px;
+}
+.contenu .ctn-genral .droit-elm .prm{
+    display: flex;
+    position: absolute;
+    width: 530px;
+    height: 48px;
+    margin: 60px 50px;
+    border: none;
+    background-color: gainsboro;
+    font-size: 17px
+}
+.contenu .ctn-genral .droit-elm .dxm{
+    display: flex;
+    position: absolute;
+    width: 530px;
+    height: 48px;
+    margin: 120px 50px;
+    border: none;
+    background-color: gainsboro;
+    font-size: 17px
+}
+.contenu .ctn-genral .droit-elm .dollar1{
+    position: absolute;
+    display: flex;
+    color: orangered;
+    width: 120px;
+    height: 50px;
+    border: 1px solid orangered;
+    border-radius: 4px;
+    margin: 200px 50px;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+.contenu .ctn-genral .droit-elm .dollar1:hover{
+    background-color: orangered;
+    color: #fff;
+    transform: scale(1.1);
+}
+.contenu .ctn-genral .droit-elm .dollar2{
+    position: absolute;
+    display: flex;
+    color: orangered;
+    width: 120px;
+    height: 50px;
+    border: 1px solid orangered;
+    border-radius: 4px;
+    margin: 200px 258px;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+.contenu .ctn-genral .droit-elm .dollar2:hover{
+    background-color: orangered;
+    color: #fff;
+    transform: scale(1.1);
+}
+.contenu .ctn-genral .droit-elm .dollar3{
+    position: absolute;
+    display: flex;
+    color: orangered;
+    width: 120px;
+    height: 50px;
+    border: 1px solid orangered;
+    border-radius: 4px;
+    margin: 200px 458px;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+.contenu .ctn-genral .droit-elm .dollar3:hover{
+    background-color: orangered;
+    color: #fff;
+    transform: scale(1.1);
+}
+.contenu .ctn-genral .droit-elm h2{
+    position: absolute;
+    display: flex;
+    width: 200px;
+    height: 50px;
+    background-color: orangered;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    margin: 300px 50px;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+.contenu .ctn-genral .droit-elm h2:hover{
+    color: orangered;
+    background-color: #fff;
+}
+
+
+
+
+
+.pied{
+    position: relative;
+    display: flex;
+    width: 1350px;
+    height: 80vh;
+    background-color: #141414;
+    top: 200px;
+    left: -9px;
+    z-index: -10;
+}
+.part1{
+    display: flex;
+    position: relative;
+    width: 19%;
+    height: 100px;
+    /* border: 2px solid black; */
+    top: 60px;
+    left: 70px;
+}
+.part1 .logo1{
+    color: orangered;
+    position: relative;
+    top: 55px;
+}
+.part1 .logo2{
+    color: #ffffff;
+    position: relative;
+    top: 55px;
+}
+.part1 .texts{
+    position: absolute;
+    display: flex;
+    top: 110px;
+    font-size: 20px;
+    color: rgb(157, 157, 157);
+}
+.part1 .reseau{
+    position: relative;
+    display: flex;
+    top: 265px;
+    gap: 20px;
+    left: -158px;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(179, 179, 179);
+}
+.part1 .reseau .reseau1{
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgb(179, 179, 179);
+    border-radius: 6px;
+}
+.part1 .reseau .reseau2{
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgb(179, 179, 179);
+    border-radius: 6px;
+}
+.part1 .reseau .reseau3{
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgb(179, 179, 179);
+    border-radius: 6px;
+}
+.part1 .reseau .reseau4{
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgb(179, 179, 179);
+    border-radius: 6px;
+}
+.part1 .reseau .reseau1:hover{
+    color: rgb(56, 56, 255);
+    transform: scale(1.1);
+    border-color: rgb(56, 56, 255);
+}
+.part1 .reseau .reseau2:hover{
+    color: rgb(138, 138, 253);
+    transform: scale(1.1);
+    border-color: rgb(138, 138, 253);
+}
+.part1 .reseau .reseau3:hover{
+    color: red;
+    transform: scale(1.1);
+    border-color: red;
+}
+.part1 .reseau .reseau4:hover{
+    color: blue;
+    transform: scale(1.1);
+    border-color: blue;
+}
+.part2 .reso ion-icon{
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    top: 90px;
+}
+.part2{
+    display: flex;
+    position: relative;
+    width: 19%;
+    height: 100px;
+   /*  border: 2px solid black; */
+    top: 60px;
+    left: 130px;
+    color: rgb(157, 157, 157);
+}
+.part2 .adresse{
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    top: 45px;
+    left: 8px;
+}
+.part2 .reso{
+    display: flex;
+    position: absolute;
+}
+.part2 .reso .icone1{
+    position: relative;
+    display: flex;
+    top: 114px;
+    left: 5px;
+    font-size: 27px;
+}
+.part2 .reso .icone2{
+    position: relative;
+    display: flex;
+    top: 164px;
+    left: -20px;
+    font-size: 27px;
+}
+.part2 .reso .icone3{
+    position: relative;
+    display: flex;
+    top: 214px;
+    left: -50px;
+    font-size: 27px;
+}
+.part2 .reso .lieu{
+    position: absolute;
+    display: flex;
+    top: 108px;
+    left: 46px;
+}
+ .part2 .reso .contact{
+    position: absolute;
+    display: flex;
+    top: 156px;
+    left: 48px;
+}
+.part2 .reso .mail{
+    position: relative;
+    display: flex;
+    top: 204px;
+    left: -40px;
+}
+.part3{
+    display: flex;
+    position: relative;
+    width: 19%;
+    height: 300px;
+    /* border: 2px solid black; */
+    top: 60px;
+    left: 190px;
+    color:rgb(157, 157, 157);
+}
+.part4{
+    display: flex;
+    position: relative;
+    width: 19%;
+    height: 100px;
+    /* border: 2px solid black; */
+    top: 60px;
+    left: 250px;
+}
+.part3 .ecrit{
+    display: flex;
+    position: absolute;
+}
+.part3 h2{
+    position: relative;
+    top: 45px;
+    color: #fff;
+}
+.part3 .ecrit1{
+    position: absolute;
+    display: flex;
+    width: 100px;
+    top: 100px;
+    cursor: pointer;
+}
+.part3 .ecrit1:hover{
+    transform: scaleX(1.1);
+}
+.part3 .ecrit2{
+    position: absolute;
+    display: flex;
+    width: 100px;
+    top: 135px;
+    cursor: pointer;
+}
+.part3 .ecrit2:hover{
+    transform: scaleX(1.1);
+}
+.part3 .ecrit3{
+    position: absolute;
+    display: flex;
+    width: 200px;
+    top: 170px;
+    cursor: pointer;
+}
+.part3 .ecrit3:hover{
+    transform: scaleX(1.1);
+}
+.part3 .ecrit4{
+    position: absolute;
+    display: flex;
+    width: 200px;
+    top: 205px;
+    cursor: pointer;
+}
+.part3 .ecrit4:hover{
+    transform: scaleX(1.1);
+}
+.part3 .ecrit5{
+    position: absolute;
+    display: flex;
+    width: 100px;
+    top: 240px;
+    cursor: pointer;
+}
+.part3 .ecrit5:hover{
+    transform: scaleX(1.1);
+}
+.part4 h2{
+    position: relative;
+    top: 45px;
+    color: #fff;
+}
+.part4 .par{
+    position: absolute;
+    display: flex;
+    top: 90px;
+    color: rgb(157, 157, 157);
+}
+.part4 input{
+    position: absolute;
+    display: flex;
+    width: 253px;
+    height: 50px;
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 6px;
+    top: 180px;
+    font-size: 18px;
+    background-color: #141414;
+}
+.part4 .btn2{
+    position: absolute;
+    display: flex;
+    top: 171px;
+    width: 90px;
+    height: 42px;
+    background-color: orangered;
+    left: 160px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: .4;
+}
+.part4 .btn:hover{
+    transform: scale(1.1);
+}
+.copy{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    border-top: 2px solid rgb(45, 45, 45);
+    top: 424px;
+}
+.copy .copy-gauche{
+    display: flex;
+    position: absolute;
+    top: 25px;
+    font-weight: bold;
+    color:#f8f8f8;
+    margin-left: 70px;
+}
+.copy .copy-gauche span{
+    display: flex;
+    position: absolute;
+    width: 150px;
+    font-weight: 100;
+    color: #b3b3b3;
+    left: 100px;
+}
+.copy .copy-droite{
+    display: flex;
+    position: absolute;
+    top: 25px;
+    color: #b3b3b3;
+    margin-left: 1020px;
+}
+.copy .copy-droite span{
+    display: flex;
+    position: absolute;
+    width: 150px;
+    font-weight: 100;
+    font-weight: bold;
+    color:#f8f8f8;
+    left: 95px;
+}

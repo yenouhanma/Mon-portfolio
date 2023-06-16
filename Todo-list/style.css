@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(78, 171, 193);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+#todo-container {
+    max-width: 400px;
+    margin: 20px auto;
+    
+}
+
+#task-input {
+    width: 100%;
+    padding: 5px;
+    height: 20px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    background-color: rgb(243, 243, 243);
+}
+
+ion-icon{
+    position: absolute;
+    display: flex;
+    color: rgb(75, 75, 75);
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background-color: #d7dcd8;
+    cursor: pointer;
+    margin-left: 380px;
+    margin-top: 8px;
+}
+
+#add-task-btn {
+    width: 80%;
+    margin-left: 45px;
+    padding: 5px;
+    background-color: #005403;
+    color: rgb(255, 255, 255);
+    border: none;
+    border: none;
+    cursor: pointer;
+}
+
+#add-task-btn:hover{
+    background-color: #4CAF50;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+    color: rgb(5, 2, 79);
+    font-weight: bold;
+    border: 2px solid rgb(214, 3, 3);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(218, 223, 80);
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.task-item .task-text {
+    flex-grow: 1;
+    margin-right: 5px;
+    text-decoration: none;
+}

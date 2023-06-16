@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculatrice</title>
+    <link rel="stylesheet" type="text/css" href="style-calculatrice.css">
+</head>
+<body>
+    <h1>CALCULATRICE</h1>
+    <div class="calculator">
+        <input type="text" id="result" readonly>
+        <table>
+            <tr>
+                <td class="position1"><button class="button-color" onclick="clearResult()">C</button></td>
+                <td class="position1"><button class="button-color" onclick="deleteLastEntry()">&larr;</button></td>
+                <td class="position-chiffre"><button onclick="appendNumber(7)">7</button></td>
+                <td class="position-chiffre"><button onclick="appendNumber(8)">8</button></td>
+                <td class="position-chiffre"><button onclick="appendNumber(9)">9</button></td>
+                <td class="position-chiffre"><button class="buton-color" onclick="appendOperator('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendNumber(4)">4</button></td>
+                <td><button onclick="appendNumber(5)">5</button></td>
+                <td><button onclick="appendNumber(6)">6</button></td>
+                <td><button class="buton-color" onclick="appendOperator('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendNumber(1)">1</button></td>
+                <td><button onclick="appendNumber(2)">2</button></td>
+                <td><button onclick="appendNumber(3)">3</button></td>
+                <td><button class="buton-color" onclick="appendOperator('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendNumber(0)">0</button></td>
+                <td><button onclick="appendDecimal()">.</button></td>
+                <td><button class="buton-color" onclick="calculateResult()">=</button></td>
+                <td><button class="buton-color" onclick="appendOperator('+')">+</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="script-calculatrice.js"></script>
+</body>
+</html>

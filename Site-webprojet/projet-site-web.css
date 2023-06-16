@@ -1,0 +1,1428 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+                                                    /* Tous le contenu */
+body{
+    display: flex;
+    font-family: arial;
+    position: absolute;
+    display: flex;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    /* background-image: url(metier-developpeur-web-1.jpg); */
+
+}
+                                                        /* Button fixe de toute la page */
+.contenaire .tout{
+    display: flex;
+    position: relative;
+    position: fixed;
+    width: 50px;
+    height: 100vh;
+    overflow: hidden;
+}
+.contenaire .fixe{
+    display: flex;
+    position: absolute;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 540px;
+    left: 94%;
+    border-radius: 6px;
+    background: rgb(255, 68, 0);
+    z-index: 5000;
+    justify-content: end;
+    cursor: pointer;
+}
+.contenaire .fixe ion-icon{
+    color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    left: 12px;
+    top: 12px;
+}
+.contenaire header{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background: black/* transparent */;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    z-index: 9;
+}
+                                                    /* LOGO */
+.contenaire .logo{
+    position: absolute;
+    display: flex;
+    padding: 10px 30px;
+    font-weight: 600;
+    top: 15px;
+}
+.contenaire .logo .orange{
+    color: orangered;
+}
+.contenaire .logo .blanc{
+    color: white;
+}
+
+                                                    /* MENU */
+                                                    /* MENU Onglets accueil et autres */
+.contenaire .menu{
+    position: relative;
+    display: flex;
+    padding: 20px 0px 80px 55%;
+    word-spacing: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    top: 15px;
+}
+                                                    /* Boutton du menu et son hover plus le ion-icon */
+.menu .btn-menu{
+    position: relative;
+    display: flex;
+    left: 38px;
+    color: orangered;
+    word-spacing: normal;
+    width: 155px;
+    height: 40px;
+    background: transparent;
+    align-items: center;
+    top: -12px;
+    border: 1px solid orangered;
+    border-radius: 4px;
+    justify-content: center;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+                                                    /* button hover */
+.menu .btn-menu:hover{
+    background-color: orangered;
+    color: white;
+}
+                                                    /* Alignement du menu */
+.contenaire .menu ul li{
+    position: relative;
+    display: inline-block;
+}
+                                                    /* modification du contenue Menu; hover */
+.contenaire .menu ul li a{
+    text-decoration: none;
+    position: relative;
+    color: white;
+    transition: .5s ease-in-out;
+}
+.contenaire .menu .home{
+    color: orangered;
+}
+.contenaire .menu ul li a:hover{
+    color: orangered;
+}
+                                                    /* ion-icon modifier */
+.contenaire .menu ion-icon{
+    position: relative;
+    display: flex;
+    font-size: 20px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: white;
+    align-items: center;
+    color: orangered;
+    left: 11px;
+}
+                                                    /* Positionnement de l'image de */
+/* .slide img{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+} */
+
+
+                                        /* HYPER SLIDE IMAGGE */
+
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+body{
+    display: flex;
+    background: gray;
+} */
+.image-slide{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.slide{
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    animation: image-slide 20s ease-in-out infinite;
+}
+
+@keyframes image-slide{
+    0%,
+    20% {
+        transform: translateX(0);
+    }
+    25%,
+    45% {
+        transform: translateX(-100%);
+    }
+    50%,
+    70% {
+        transform: translateX(-200%);
+    }
+    75%,
+    95% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(-400%);
+    }
+}
+
+
+                                                        /* ecrire sur l'image */
+.slide .ecriture h1{
+    position: relative;
+    display: flex;
+    height: 45px;
+    top: -500px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+.slide .ecriture p{
+    position: relative;
+    display: flex;
+    height: 45px;
+    top: -500px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.slide .ecriture h3{
+    position: relative;
+    display: flex;
+    height: 45px;
+    top: -500px;
+    left: 45%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    border: 1px solid white;
+    background: orange;
+    border-radius: 5px;
+    transition: .5s ease-in-out;
+}
+.slide .ecriture h3 ion-icon{
+    position: relative;
+    display: flex;
+    width: 22px;
+    height: 22px;
+    background: white;
+    border-radius: 50%;
+    color: orange;
+    left: 5px;
+}
+.slide .ecriture h3:hover{
+    color: orange;
+    background-color: transparent;
+}
+
+                                                        /* Les defilements des differentes elements */
+.elements{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    background: white;
+    /* z-index: -10; */
+}
+/* .elements .gauche img{
+    width: 60%;
+    height: auto;
+} */
+                                                    /* image de la partie gauche */
+.elements .gauche .grand-img{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 457px;
+}
+.elements .gauche .petit-img{
+    position: absolute;
+    display: flex;
+    width: 150px;
+    height: 105px;
+    top: -60px;
+    left: 400px;
+    border: 7px solid white;
+}
+                                                    /* partie gauche */
+.elements .gauche{
+    position: relative;
+    display: flex;
+    width: 60%;
+    margin: 60px;
+    height: auto;
+    float: left;
+    background: gray;
+}
+                                                    /* partie droite */
+.elements .droite{
+    position: relative;
+    display: flex;
+    width: 80%;
+    height: auto;
+    float: right;
+    /* background: #ffff; */
+    background: #fff;
+}
+.droite button{
+    position: absolute;
+    display: flex;
+    width: 75px;
+    height: 29px;
+    top: 40px;
+    color: orange;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background: rgb(248, 238, 220);
+}
+.droite h1{
+    position: absolute;
+    display: flex;
+    text-transform: capitalize;
+    top: 100px;
+    color: black;
+    display: inline;
+    font-size: 38px;
+}
+.droite p{
+    position: absolute;
+    display: flex;
+    /* top: 250px;
+    left: 15px; */
+    margin: 250px 0 0 15px;
+    width: 550px;
+    height: 80px;
+    /* border-radius: 10px;
+    background: gray;
+    border-bottom: 5px solid orangered; */
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+}
+.droite a{
+    position: absolute;
+    display: flex;
+    text-decoration: none;
+    color: orangered;
+    margin: 85px 410px 0 0;
+    justify-content: center;
+    align-items: center;
+}
+.droite div{
+    position: absolute;
+    width: 550px;
+    top: 250px;
+    height: 120px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background: rgb(218, 218, 218);
+    border-bottom: 5px solid orangered;
+    z-index: 3;
+}
+.droite .bas{
+    position: absolute;
+    display: flex;
+    margin: 400px 0 0 0;
+    color: rgb(150, 150, 150);
+}
+                                                    /* Les bouttons de la deuxieme page a droite */
+.drt{
+    gap: 45px;
+}
+.drt .btn-gauche{
+    position: absolute;
+    display: flex;
+    width: 130px;
+    height: 40px;
+    border: 1px solid orangered;
+    border-radius: 8px;
+    background-color: orangered;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    top: 225px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .5s;
+}
+.drt .btn-gauche ion-icon{
+    position: relative;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: white;
+    color: orangered;
+    left: 5px;
+}
+.drt .btn-gauche:hover{
+    color: orangered;
+    background-color: white;
+}
+.drt .btn-droite{
+    position: absolute;
+    display: flex;
+    width: 130px;
+    height: 40px;
+    border: 1px solid orangered;
+    border-radius: 8px;
+    background-color: white;
+    color: orangered;
+    align-items: center;
+    justify-content: center;
+    top: 225px;
+    left: 170px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .5s;
+}
+.drt .btn-droite ion-icon{
+    position: relative;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: orangered;
+    color: white;
+    left: 5px;
+}
+.drt .btn-droite:hover{
+    color: white;
+    background-color: orangered;
+}
+
+                                                /* PARTI II */
+.deux-parti{
+    position: relative;
+    display: flex;
+    width: 100%;
+    /* z-index: -10; */
+}
+.deux-parti .premier-vu{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    width: 130px;
+    height: 30px;
+    left: 600px;
+    top: 40px;
+    border-radius: 15px;
+    background-color: rgb(255, 200, 180);
+}
+.deux-parti .premier-vu p{
+    position: absolute;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+    top: 6px;
+    width: 130px;
+    height: 30px;
+    color: rgb(252, 79, 16);
+    text-align: center;
+}
+.deux-parti .en-tete{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    top: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+}
+.deux-parti .en-tet{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    top: 145px;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+}
+
+                                                        /* PARTI III */
+.tableau{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 850px;
+    background-color: rgb(231, 231, 231);
+    /* z-index: -10; */
+}
+.tableau .tableau1{
+    position: relative;
+    display: flex;
+    width: 40%;
+    height: 530px;
+    border: 1px solid transparent;
+    background-color: white;
+    border-radius: 15px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top: 7px solid orangered;
+    /* left: 100px; */
+    margin-left: 35px;
+    margin-right: 35px;
+    top: 260px;
+}
+.tableau .tableau1 .haut{
+    position: absolute;
+    display: flex;
+    width: 115px;
+    height: 30px;
+    color: white;
+    background-color: orangered;
+    /* text-align: center; */
+    justify-content: center;
+    /* align-items: center; */
+    left: 132px;
+    font-size: 19px;
+    font-weight: 500;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.tableau .tableau1 h3{
+    position: absolute;
+    display: flex;
+    top: 50px;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 22px;
+    justify-content: center;
+    right: 10px;
+}
+.tableau .tableau1 .u{
+    left: 7px;
+} 
+.tableau .tableau1 .d{
+    left: 22px;
+} 
+.tableau .tableau1 h3{
+    left: 24px;
+} 
+.tableau .tableau1 .texte{
+    position: absolute;
+    display: flex;
+    color: gray;
+    top: 100px;
+    text-align: center;
+}
+.tableau .tableau1 .progres-ctn{
+    position: absolute;
+    display: flex;
+    width: 350px;
+    height: 60px;
+    background-color: rgb(203, 203, 203);
+    top: 156px;
+    left: 14px;
+}
+.progress{
+    position: absolute;
+    width: 328px;
+    height: 9px;
+    background-color: white;
+    border-radius: 3px;
+    top: 35px;
+    left: 10px;
+}
+.progress .value{
+    background-color: orangered;
+    width: 280px;
+    border-radius: 3px;
+    height: 9px;
+}
+
+.progress .value .porcnt{
+    position: absolute;
+    display: flex;
+    background-color: orangered;
+    width: 35px;
+    height: 16px;
+    top: -3px;
+    left: 250px;
+    font-size: 14px;
+    justify-content: center;
+    color: #fff;
+}
+.tableau .tableau1 span{
+    position: relative;
+    top: 8px;
+    left: 11px;
+}
+.tableau .tableau1 span p{
+    display: inline;
+    color: rgb(109, 109, 109);
+    font-size: 15px;
+}
+.tableau .tableau1 label{
+    position: relative;
+    top: 8px;
+    left: 150px;
+}
+.tableau .tableau1 label p{
+    color: rgb(109, 109, 109);
+    display: inline;
+    font-size: 15px;
+}
+                                                        /* IMAGE */
+.tableau img{
+    position: relative;
+    width: 100%;
+    height: 280px;
+    top: 251px;
+}
+
+                                                /* PARTI VI */
+.dp{
+    position: relative;
+    display: flex;
+    width: 100%;
+    /* z-index: -10; */
+}
+.dp .premier-vu{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    width: 130px;
+    height: 30px;
+    left: 600px;
+    top: 60px;
+    border-radius: 15px;
+    background-color: rgb(255, 200, 180);
+}
+.dp .premier-vu p{
+    position: absolute;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+    top: 6px;
+    width: 130px;
+    height: 30px;
+    color: rgb(252, 79, 16);
+    text-align: center;
+}
+.dp .en-tete{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    top: 100px;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+}
+.dp .en-tet{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    top: 145px;
+    justify-content: center;
+    text-transform: capitalize;
+    align-items: center;
+    font-size: 38px;
+}
+                                        /* PETIT LOGO EN TABLEAU */
+.petit-logo{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 850px;
+    background-color: rgb(247, 247, 247);
+    /* z-index: -10; */
+}
+.petit-logo .tab1{
+    position: relative;
+    display: flex;
+    width: 360px;
+    height: 540px;
+    top: 250px;
+    background-color: #fff;
+    margin-left: 70px;
+}
+.petit-logo img{
+    position: relative;
+    display: flex;
+    width: 360px;
+    height: 290px;
+}
+.petit-logo .tab1 h2{
+    position: absolute;
+    display: flex;
+    width: 290px;
+    height: 30px;
+    top: 300px;
+    margin-left: 40px;
+    /* text-align: center; */
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+.petit-logo .tab1 .en-tt{
+    overflow: hidden;
+}
+.petit-logo .tab1 .txt{
+    position: absolute;
+    display: flex;
+    top: 354px;
+    margin-left: 24px;
+    width: 315px;
+    justify-content: center;
+    text-align: center;
+    color: gray;
+}
+.petit-logo .tab1 a{
+    position: absolute;
+    display: flex;
+    width: 145px;
+    height: 35px;
+    top: 450px;
+    color: orangered;
+    font-size: 18px;
+    margin-left: 106px;
+    border: 1px solid orangered;
+    background-color: white;
+    border-radius: 1px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: .5s ease-in-out;
+}
+.petit-logo .tab1 a ion-icon{
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background-color: orangered;
+    border-radius: 50%;
+    color: white;
+    left: 5px;
+}
+.petit-logo .tab1 a:hover{
+    background-color: orangered;
+    color: white;
+}
+
+                                            /* REMPLISAGE */
+.contenu{
+    display: flex;
+    position: relative;
+    background: rgb(19, 19, 19);
+    width: auto;
+    height: 100vh;
+    /* z-index: -10; */
+}
+.contenu .ctn-genral{
+    position: relative;
+    display: flex;
+    color: #fff;
+}
+
+.contenu .ctn-genral .btn{
+    position: absolute;
+    display: flex;
+    color: orangered;
+    width: 120px;
+    height: 27px;
+    font-weight: 500;
+    border-radius: 20px;
+    background-color: rgb(250, 199, 181);
+    justify-content: center;
+    align-items: center;
+    margin: 120px 70px;
+}
+.contenu .ctn-genral h1{
+    display: flex;
+    position: absolute;
+    margin: 160px 70px;
+    width: 500px;
+    text-transform: capitalize;
+}
+.contenu .ctn-genral .texte{
+    position: absolute;
+    display: flex;
+    /* top:250px;
+    left: 90px; */
+    margin: 280px 70px;
+    width: 570px;
+    line-height: 2;
+}
+.contenu .ctn-genral .droit-elm{
+    display: flex;
+    position: absolute;
+    width: 630px;
+    height: 440px;
+    background-color: #f8f8f8;
+    margin: 80px 640px;
+}
+.contenu .ctn-genral .droit-elm .prm{
+    display: flex;
+    position: absolute;
+    width: 530px;
+    height: 48px;
+    margin: 60px 50px;
+    border: none;
+    background-color: gainsboro;
+    font-size: 17px
+}
+.contenu .ctn-genral .droit-elm .dxm{
+    display: flex;
+    position: absolute;
+    width: 530px;
+    height: 48px;
+    margin: 120px 50px;
+    border: none;
+    background-color: gainsboro;
+    font-size: 17px
+}
+.contenu .ctn-genral .droit-elm .dollar1{
+    position: absolute;
+    display: flex;
+    color: orangered;
+    width: 120px;
+    height: 50px;
+    border: 1px solid orangered;
+    border-radius: 4px;
+    margin: 200px 50px;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+.contenu .ctn-genral .droit-elm .dollar1:hover{
+    background-color: orangered;
+    color: #fff;
+    transform: scale(1.1);
+}
+.contenu .ctn-genral .droit-elm .dollar2{
+    position: absolute;
+    display: flex;
+    color: orangered;
+    width: 120px;
+    height: 50px;
+    border: 1px solid orangered;
+    border-radius: 4px;
+    margin: 200px 258px;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+.contenu .ctn-genral .droit-elm .dollar2:hover{
+    background-color: orangered;
+    color: #fff;
+    transform: scale(1.1);
+}
+.contenu .ctn-genral .droit-elm .dollar3{
+    position: absolute;
+    display: flex;
+    color: orangered;
+    width: 120px;
+    height: 50px;
+    border: 1px solid orangered;
+    border-radius: 4px;
+    margin: 200px 458px;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+.contenu .ctn-genral .droit-elm .dollar3:hover{
+    background-color: orangered;
+    color: #fff;
+    transform: scale(1.1);
+}
+.contenu .ctn-genral .droit-elm h2{
+    position: absolute;
+    display: flex;
+    width: 200px;
+    height: 50px;
+    background-color: orangered;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    margin: 300px 50px;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+.contenu .ctn-genral .droit-elm h2:hover{
+    color: orangered;
+    background-color: #fff;
+}
+
+                                                    /* AVANT DERNIER */
+.personalite{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    /* z-index: -10; */
+}
+.personalite .image img{
+    width: 250px;
+    height: 300px;
+}
+.personalite .image{
+    position: relative;
+    display: flex;
+    width: 250px;
+    height: 380px;
+    border: 1px solid transparent;
+    background-color: rgb(255, 242, 223);
+    margin: 240px 21px;
+    left: 105px;
+}
+.personalite .image h5{
+    position: absolute;
+    display: flex;
+    font-size: 16px;
+    width: 100px;
+    margin: 317px 81px;
+}
+.personalite .image p{
+    position: absolute;
+    display: flex;
+    margin: 342px 76px;
+    color: rgb(251, 115, 66);
+}
+.personalite .image:hover{
+    transform: scale(1.2);
+}
+/*.personalite .image .img1{
+    position: absolute;
+    display: flex;
+    margin: 240px 90px;
+}
+.personalite .image .img2{
+    position: absolute;
+    display: flex;
+    margin: 240px 0;
+    left: 400px;
+}
+.personalite .image .img3{
+    position: absolute;
+    display: flex;
+    margin: 240px 0;
+    left: 710px;
+}
+.personalite .image .img4{
+    position: absolute;
+    display: flex;
+    margin: 240px 0;
+    left: 1030px;
+}
+
+.personalite .image h5{
+    position: absolute;
+    display: flex;
+    font-size: 16px;
+    margin: 558px 165px;
+    z-index: 2;
+}
+.personalite .image p{
+    position: absolute;
+    display: flex;
+    margin: 580px 159px;
+    color: rgb(251, 115, 66);
+    z-index: 2;
+} */
+.personalite .perso{
+    position: absolute;
+    display: flex;
+    width: 160px;
+    height: 27px;
+    background-color: rgb(250, 185, 162);
+    color: orangered;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    margin: 55px 600px;
+}
+.personalite .pers{
+    position: absolute;
+    display: flex;/* 
+    width: 100%; */
+    text-align: center;
+    text-transform: capitalize;
+    margin: 100px 525px;
+}
+
+                                                            /* avant dernier livre */
+.profile{
+    display: flex;
+    position: relative;
+    display: inline-block;
+    width: 460px;
+    height: 500px;
+    border: 2px solid rgb(235, 235, 235);
+    left: 455px;
+    top: 150px;
+    /* z-index: -10; */
+}
+.carte{
+    width: 100%;
+    height: 100vh;
+}
+.carte .tete{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 100px;
+    width: 100px;
+    height: 25px;
+    background-color: orangered;
+    border-radius: 16px;
+    align-items: center;
+    left: 625px;
+}
+.carte .tete2{
+    position: relative;
+    display: flex;
+    width: 500px;
+    text-align: center;
+    justify-content: center;
+    left: 425px;
+    top: 120px;
+}
+.profile .image img{
+    position: relative;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    border: 6px solid #ff6c03;
+    border-radius: 50%;
+    left: 190px;
+    top: 20px;
+}
+.profile .pargrh{
+    position: absolute;
+    display: flex;
+    top: 140px;
+    width: 460px;
+    height: 195px;
+    background-color: #ff6c03;
+    border-radius: 10px;
+    color: #fff;
+    line-height: 1.2;
+}
+.profile .pargrh .paragr{
+    position: absolute;
+    margin: 20px 10px 25px 10px;
+    display: flex;
+    text-align: center;
+}
+.profile .pargrh .paragr span{
+    position: absolute;
+    display: flex;
+    font-weight: bold;
+    top: 110px;
+    left: 175px;
+}
+.profile .pargrh .paragr label{
+    position: absolute;
+    display: flex;
+    top: 135px;
+    left: 185px;
+}
+
+                                        /* FIN */
+.pied{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    background-color: #141414;
+    top: 200px;
+    /* z-index: -10; */
+}
+.part1{
+    display: flex;
+    position: relative;
+    width: 19%;
+    height: 100px;
+    /* border: 2px solid black; */
+    top: 60px;
+    left: 70px;
+}
+.part1 .logo1{
+    color: orangered;
+    position: relative;
+    top: 55px;
+}
+.part1 .logo2{
+    color: #ffffff;
+    position: relative;
+    top: 55px;
+}
+.part1 .texts{
+    position: absolute;
+    display: flex;
+    top: 110px;
+    font-size: 20px;
+    color: rgb(157, 157, 157);
+}
+.part1 .reseau{
+    position: relative;
+    display: flex;
+    top: 245px;
+    gap: 20px;
+    left: -158px;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(179, 179, 179);
+}
+.part1 .reseau .reseau1{
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgb(179, 179, 179);
+    border-radius: 6px;
+}
+.part1 .reseau .reseau2{
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgb(179, 179, 179);
+    border-radius: 6px;
+}
+.part1 .reseau .reseau3{
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgb(179, 179, 179);
+    border-radius: 6px;
+}
+.part1 .reseau .reseau4{
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgb(179, 179, 179);
+    border-radius: 6px;
+}
+.part1 .reseau .reseau1:hover{
+    color: rgb(56, 56, 255);
+    transform: scale(1.1);
+    border-color: rgb(56, 56, 255);
+}
+.part1 .reseau .reseau2:hover{
+    color: rgb(138, 138, 253);
+    transform: scale(1.1);
+    border-color: rgb(138, 138, 253);
+}
+.part1 .reseau .reseau3:hover{
+    color: red;
+    transform: scale(1.1);
+    border-color: red;
+}
+.part1 .reseau .reseau4:hover{
+    color: blue;
+    transform: scale(1.1);
+    border-color: blue;
+}
+.part2 .reso ion-icon{
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    top: 90px;
+}
+.part2{
+    display: flex;
+    position: relative;
+    width: 19%;
+    height: 100px;
+   /*  border: 2px solid black; */
+    top: 60px;
+    left: 130px;
+    color: rgb(157, 157, 157);
+}
+.part2 .adresse{
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    top: 45px;
+    left: 8px;
+}
+.part2 .reso{
+    display: flex;
+    position: absolute;
+}
+.part2 .reso .icone1{
+    position: relative;
+    display: flex;
+    top: 97px;
+    left: 5px;
+    font-size: 27px;
+}
+.part2 .reso .icone2{
+    position: relative;
+    display: flex;
+    top: 148px;
+    left: -20px;
+    font-size: 27px;
+}
+.part2 .reso .icone3{
+    position: relative;
+    display: flex;
+    top: 198px;
+    left: -50px;
+    font-size: 27px;
+}
+.part2 .reso .lieu{
+    position: absolute;
+    display: flex;
+    top: 108px;
+    left: 46px;
+}
+ .part2 .reso .contact{
+    position: absolute;
+    display: flex;
+    top: 156px;
+    left: 48px;
+}
+.part2 .reso .mail{
+    position: relative;
+    display: flex;
+    top: 204px;
+    left: -40px;
+}
+.part3{
+    display: flex;
+    position: relative;
+    width: 19%;
+    height: 300px;
+    /* border: 2px solid black; */
+    top: 60px;
+    left: 190px;
+    color:rgb(157, 157, 157);
+}
+.part4{
+    display: flex;
+    position: relative;
+    width: 19%;
+    height: 100px;
+    /* border: 2px solid black; */
+    top: 60px;
+    left: 250px;
+}
+.part3 .ecrit{
+    display: flex;
+    position: absolute;
+}
+.part3 h2{
+    position: relative;
+    top: 45px;
+    color: #fff;
+}
+.part3 .ecrit1{
+    position: absolute;
+    display: flex;
+    width: 100px;
+    top: 100px;
+    cursor: pointer;
+}
+.part3 .ecrit1:hover{
+    transform: scaleX(1.1);
+}
+.part3 .ecrit2{
+    position: absolute;
+    display: flex;
+    width: 100px;
+    top: 135px;
+    cursor: pointer;
+}
+.part3 .ecrit2:hover{
+    transform: scaleX(1.1);
+}
+.part3 .ecrit3{
+    position: absolute;
+    display: flex;
+    width: 200px;
+    top: 170px;
+    cursor: pointer;
+}
+.part3 .ecrit3:hover{
+    transform: scaleX(1.1);
+}
+.part3 .ecrit4{
+    position: absolute;
+    display: flex;
+    width: 200px;
+    top: 205px;
+    cursor: pointer;
+}
+.part3 .ecrit4:hover{
+    transform: scaleX(1.1);
+}
+.part3 .ecrit5{
+    position: absolute;
+    display: flex;
+    width: 100px;
+    top: 240px;
+    cursor: pointer;
+}
+.part3 .ecrit5:hover{
+    transform: scaleX(1.1);
+}
+.part4 h2{
+    position: relative;
+    top: 45px;
+    color: #fff;
+}
+.part4 .par{
+    position: absolute;
+    display: flex;
+    top: 90px;
+    color: rgb(157, 157, 157);
+}
+.part4 input{
+    position: absolute;
+    display: flex;
+    width: 253px;
+    height: 50px;
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 6px;
+    top: 180px;
+    font-size: 18px;
+    background-color: #141414;
+}
+.part4 .btn{
+    position: absolute;
+    display: flex;
+    top: 186px;
+    width: 90px;
+    height: 42px;
+    background-color: orangered;
+    left: 160px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: .4;
+}
+.part4 .btn:hover{
+    transform: scale(1.1);
+}
+.copy{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    border-top: 2px solid rgb(45, 45, 45);
+    top: 424px;
+}
+.copy .copy-gauche{
+    display: flex;
+    position: absolute;
+    top: 25px;
+    font-weight: bold;
+    color:#f8f8f8;
+    margin-left: 70px;
+}
+.copy .copy-gauche span{
+    display: flex;
+    position: absolute;
+    width: 150px;
+    font-weight: 100;
+    color: #b3b3b3;
+    left: 100px;
+}
+.copy .copy-droite{
+    display: flex;
+    position: absolute;
+    top: 25px;
+    color: #b3b3b3;
+    margin-left: 1020px;
+}
+.copy .copy-droite span{
+    display: flex;
+    position: absolute;
+    width: 150px;
+    font-weight: 100;
+    font-weight: bold;
+    color:#f8f8f8;
+    left: 95px;
+}
+
+
+
+
+
+
+/* SLIDE IMAGE */
+/* .image-slide{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.slide{
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform .5s ease-in-out;
+}
+.slide img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.slide.active{
+    transform: translateX(0);
+}
+.slide.prev{
+    transform: translateX(-100);
+}
+.slide.next{
+    transform: translateX(100%);
+}
+.ecri-un{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-align: center;
+} */

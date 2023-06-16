@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>
+  <body>
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="Logo-Pharmacie.jpg" alt="logo" width="80"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Accueil">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#A Propos">A Propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contactez-nous">Contactez-nous</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- Image carousels -->
+<div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="pharma-carou.jpg" class="d-block w-100" alt="photo-de-bienvenue">
+      </div>
+      <div class="carousel-item">
+        <img src="parma-carou1.jpg" class="d-block w-100" alt="expertiste">
+      </div>
+      <div class="carousel-item">
+        <img src="image-carou2.jpg" class="d-block w-100" alt="clients">
+      </div>
+      <div class="carousel-item">
+        <img src="image-carou3.webp" class="d-block w-100" alt="localisation">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Principal contenue -->
+  <div class="contenu">
+
+    <h1 class="text-center p-5 mb-5 mt-5">Pharmacie DiGiTAL</h1>
+    <div class="w-100 bg-dark-subtle p-5 mb-5 text-center">
+        <p>
+            La Pharmacie DiGiTAL est l'une des plus grande de Ouagadougou, elle a des membres qui accueillent chaleuresement les Visiteurs& clients. <br>
+            Toutes sortes de produits pharmaceutique y est avec de très bonne qualités. <br>
+            Achats en ligne dispo !!! <br><br>
+            <button type="button" class="btn btn-primary btn-lg">Achats en ligne</button>
+        </p>
+    </div>
+
+    <!-- A Propos -->
+    <h2 id="A Propos" class="fs-1 p-5 mt-5 mb-5 text-center">A Propos</h2>
+      <div class="row">
+        <div class="col">
+            <!-- carte 0 -->
+            <div class="card">
+                <img src="produits.webp" class="card-img-top" alt="produit">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Nos Produits</h5><hr>
+                  <p class="card-text">
+                    Nous avons plusieurs produits votre disposition.
+                    Veillez cliquez sur le boutton bleu d'en bas pour voir tous nos produits pharmaceutique.
+                  </p>
+                  <p class="text-center"><a href="#" class="btn btn-primary">Voir plus...</a></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <!-- catre 1 -->
+            <div class="card">
+                <img src="partenair.jpg" class="card-img-top" alt="Partenaires">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Nos Partenaires</h5><hr>
+                  <p class="card-text">
+                    Nous avons plusieurs produits votre disposition.
+                    Veillez cliquez sur le boutton bleu d'en bas pour voir tous nos produits pharmaceutique.
+                  </p>
+                  <p class="text-center"><a href="#" class="btn btn-primary">Voir plus...</a></p>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col">
+            <!-- catre 2 -->
+            <div class="card">
+                <img src="expt.jpeg" class="card-img-top" alt="produit">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Notre Expertistes</h5><hr>
+                  <p class="card-text">
+                    Nous avons plusieurs produits votre disposition.
+                    Veillez cliquez sur le boutton bleu d'en bas pour voir tous nos produits pharmaceutique.
+                  </p>
+                  <p class="text-center"><a href="#" class="btn btn-primary">Voir plus...</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <!-- catre 3 -->
+            <div class="card">
+                <img src="service.jpg" class="card-img-top" alt="produit">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Nos Services</h5><hr>
+                  <p class="card-text">
+                    Nous avons plusieurs produits votre disposition.
+                    Veillez cliquez sur le boutton bleu d'en bas pour voir tous nos produits pharmaceutique.
+                  </p>
+                  <p class="text-center"><a href="#" class="btn btn-primary">Voir plus...</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Blog -->
+    <h2 id="Blog" class="fs-1 p-5 mt-5 mb-5 text-center">Blog</h2>
+    <div class="row">
+      <div class="col-6">
+        <div class="bg-secondary text-white p-5 mt-5 mb-5">
+          <h3>Localisation</h3>
+          <p>Nous sommes située au 1200 Logements, non loin de l'Université Aube Nouvelle</p>
+        </div>
+      </div>
+      
+      <div class="col-6">
+        <div class="bg-dark-subtle p-5 mt-5 mb-5">
+          <h3>Nous Rejoindre</h3>
+          <p>Nous sommes située au 1200 Logements, non loin de l'Université Aube Nouvelle</p>
+        </div>
+      </div>
+      
+      <div class="col-6">
+        <div class="bg-dark-subtle p-5 mt-5 mb-5">
+          <h3>Nous Contacter</h3>
+          <p>+226 74000846</p>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="bg-secondary text-white p-5 mt-5 mb-5">
+          <h3>Page Facebook</h3>
+          <p>Pharmacie Dig-Smith</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-100 bg-dark-subtle p-5 mb-5 text-center">
+      <p>
+          Pour plus d'information veillez nous ecrire en cliquant ici. <br><br>
+          <button type="button" class="btn btn-primary btn-lg"><a ></a> Contactez-Nous pour plus d'information</button>
+      </p>
+   </div>
+
+   <h2 id="Contactez-nous" class="fs-1 p-5 mt-5 text-center">Nos Conseilles</h2>
+   <img src="conseilleé.jpeg" alt="conseillé" class="w-100 nb-5">
+
+
+  </div>
+  <!-- fin du contenu -->
+
+   <footer class="bg-dark mt-5 p-5 text-white text-center">
+    <p>&copy; Pharmacie Dig-Smith</p>
+    <p><a href="mailto: yenouhanmamano@.com" class="text-white">Envoyer un Mail</a></p>
+   </footer>
+
+ 
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
