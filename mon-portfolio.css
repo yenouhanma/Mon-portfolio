@@ -285,7 +285,7 @@ span{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    background: linear-gradient(rgba(0, 0, 0, .3), var(--main-color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -324,7 +324,104 @@ span{
 }
 
 
+                                    /* SECTION COMPETENCES */
+.competences{
+    min-height: auto;
+    padding-bottom:7rem;
+    /* background: var(--second-bg-color); */
+}
+.competences .ligne-competences{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.ligne-competences .col-competences{
+    flex: 1 1 40rem;
+}
+.col-competences .titre{
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+}
+.lieu-competences .contenu-competences{
+    position: relative;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+    z-index: 1;
+    overflow: hidden;
+}
+/* afficher le bacgroung d'abord puis les progress */
+.lieu-competences .contenu-competences::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .4s
+}
+.lieu-competences .contenu-competences:hover::before{
+    width: 100%;
+}
+.contenu-competences .progress{
+    padding: 1rem 0;
+}
+.contenu-competences .progress h3{
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenu-competences .progress h3 span{
+    color: var(--text-color);
+}
+.contenu-competences .progress .bar{
+    height: 2rem;
+    border-radius: 1rem;
+    border: .2rem solid var(--main-color);
+    padding: .2rem;
+    margin: 1rem 0;
+}
+.contenu-competences .progress .bar span{
+    display: block;
+    height: 100%;
+    border-radius: 1rem;
+    background: var(--main-color);
+}
+/* Les fonctions du progress */
+.col-competences:nth-child(1) .contenu-competences .progress:nth-child(1) .bar span{
+    width: 90%;
+} 
+.col-competences:nth-child(1) .contenu-competences .progress:nth-child(2) .bar span{
+    width: 45%;
+} 
+.col-competences:nth-child(1) .contenu-competences .progress:nth-child(3) .bar span{
+    width: 52%;
+} 
+.col-competences:nth-child(1) .contenu-competences .progress:nth-child(4) .bar span{
+    width: 48%;
+} 
+
+.col-competences:nth-child(2) .contenu-competences .progress:nth-child(1) .bar span{
+    width: 85%;
+} 
+.col-competences:nth-child(2) .contenu-competences .progress:nth-child(2) .bar span{
+    width: 60%;
+} 
+.col-competences:nth-child(2) .contenu-competences .progress:nth-child(3) .bar span{
+    width: 82%;
+} 
+.col-competences:nth-child(2) .contenu-competences .progress:nth-child(4) .bar span{
+    width: 55%;
+} 
+
+
                                     /* SECTION CONTACT */
+.contact{
+    background: var(--second-bg-color);
+}
 .contact h2{
     margin-bottom: 3rem;
 }
@@ -347,7 +444,7 @@ span{
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
     border-radius: .8rem;
     margin: .7rem 0;
 }
@@ -371,7 +468,7 @@ span{
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    /* background: var(--second-bg-color); */
 }
 .pied-text p{
     font-size: 1.6rem;
@@ -508,6 +605,20 @@ span{
     }
 }
 
+                                /* Moi meme mes modifif sur le footer */
+@media (max-width: 410px){
+    html{
+        font-size: 44%;
+    }
+    .pied{
+        font-size: 100%;
+        width: 100%;
+        margin: auto auto;
+        margin-left: .1rem;
+
+    }
+}
+
 @media(max-width: 365px){
     .image-accueil img{
         width: 90vw;
@@ -519,6 +630,7 @@ span{
 
     .pied p{
         text-align: center;
+        /* font-size: .001rem */
         margin-top: 2rem;
     }
 }
