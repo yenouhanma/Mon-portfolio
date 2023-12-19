@@ -398,7 +398,7 @@ span{
     width: 45%;
 } 
 .col-competences:nth-child(1) .contenu-competences .progress:nth-child(3) .bar span{
-    width: 52%;
+    width: 75%;
 } 
 .col-competences:nth-child(1) .contenu-competences .progress:nth-child(4) .bar span{
     width: 48%;
