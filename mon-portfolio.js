@@ -57,7 +57,7 @@ ScrollReveal().reveal('.contenu-accueil p, .contenu-propos', { origin: 'right' }
 
                                 /* Ecriture et effacement de mon texte */
 const typed = new Typed('.multi-texte', {
-    strings: ['Développeur Web', 'Designer', 'Blogger'],
+    strings: ['Développeur Web', 'Designer', 'Bloggeur'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
